@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="/views/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="/signup.js" defer></script>
+</head>
+<body>
+	<img class="wave" src="/image/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="/image/graph1.svg">
+		</div>
+		<div class="login-content">
+			<form onsubmit="signup(event)">
+				<h2 class="title">Sign Up</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<input type="text" class="input" name="username" placeholder="Username">
+           		   </div>
+           		</div>
+                   <div class="input-div one">
+                    <div class="i">
+                            <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                            <input type="text" class="input" name="email" placeholder="Email Id">
+                    </div>
+                 </div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<input type="password" class="input" name="password" placeholder="Password">
+            	   </div>
+            	</div>
+            	<input type="submit" class="btn" value="Sign Up">
+                <a href="login.html">Already Registered? Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
